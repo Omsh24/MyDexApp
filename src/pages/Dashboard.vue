@@ -13,7 +13,7 @@
       </button>
     </div>
 
-    <div v-if="show == 'mydata'">
+    <div v-if="show == 'mydata'" class="flex flex-col gap-4">
       <div v-if="loading">Loading user data...</div>
 
       <div v-else-if="error" class="error">
@@ -29,13 +29,17 @@
         </p>
       </div>
 
-      <div class="flex w-full justify-between">
-        <button @click="logout" class="self-center cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
+      <div class="flex flex-col w-full justify-between gap-2">
+        <button @click="logout" class="w-full self-center bg-white cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
           Logout
         </button>
 
-        <button @click="goToCardGame" class="self-center cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
-          Play a game
+        <button @click="goToCardGame" class="w-full self-center bg-white cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
+          Play Pokemon Card Game
+        </button>
+
+        <button @click="goToGame2" class="w-full self-center bg-white cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
+          Play a Who's that Pokemon
         </button>
       </div>
     </div>
@@ -47,7 +51,7 @@
         </button>
         <div v-if="user.mydex.length == 0">This is where your PokeDex would be displayed.</div>
         <div v-else>
-          pokemons in your PokeDex: {{ user.mydex.length }}
+          Pokemons in your PokeDex: {{ user.mydex.length }}
         </div>
         <div class="max-h-[60vh] overflow-y-auto w-full">
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
@@ -126,6 +130,10 @@
 
   function goToCardGame() {
     router.push("/cardgame")
+  }
+
+  function goToGame2() {
+    router.push('/whosethatpokemon')
   }
 
   function logout() {

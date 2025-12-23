@@ -4,6 +4,7 @@ import Login from "../pages/Login.vue";
 import Dashboard from "../pages/Dashboard.vue";
 import Pokeapi from "../pages/Pokeapi.vue";
 import CardGame from "../pages/CardGame.vue";
+import WhoIsThatPokemon from "../pages/WhoIsThatPokemon.vue";
 
 export default createRouter({
     history: createWebHistory(),
@@ -27,6 +28,10 @@ export default createRouter({
         {
             path: "/cardgame",
             component: CardGame
+        },
+        {
+            path: "/whosethatpokemon",
+            component: WhoIsThatPokemon
         },
     ]
 })
