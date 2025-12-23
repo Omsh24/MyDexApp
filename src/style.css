@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html, body {
+  min-height: 100%;
+  background-color: rgb(187 247 208); /* Tailwind bg-green-200 */
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
