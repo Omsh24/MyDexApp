@@ -3,6 +3,7 @@ import Signup from "../pages/Signup.vue";
 import Login from "../pages/Login.vue";
 import Dashboard from "../pages/Dashboard.vue";
 import Pokeapi from "../pages/Pokeapi.vue";
+import CardGame from "../pages/CardGame.vue";
 
 export default createRouter({
     history: createWebHistory(),
@@ -22,6 +23,10 @@ export default createRouter({
         {
             path: "/pokeapi",
             component: Pokeapi
+        },
+        {
+            path: "/cardgame",
+            component: CardGame
         },
     ]
 })

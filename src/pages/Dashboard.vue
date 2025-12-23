@@ -29,9 +29,13 @@
         </p>
       </div>
 
-      <div class="self-center cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
-        <button @click="logout">
+      <div class="flex w-full justify-between">
+        <button @click="logout" class="self-center cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
           Logout
+        </button>
+
+        <button @click="goToCardGame" class="self-center cursor-pointer border-2 border-black px-4 py-2 rounded-md hover:bg-gray-200">
+          Play a game
         </button>
       </div>
     </div>
@@ -118,6 +122,10 @@
         show.value = 'mydex'
       }
     }
+  }
+
+  function goToCardGame() {
+    router.push("/cardgame")
   }
 
   function logout() {
