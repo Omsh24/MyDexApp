@@ -1,54 +1,37 @@
-# Project Roadmap
+# MyDex - A Pokemon App
 
 ---
 
-## ✅ PHASE 1: Authentication & Basic Setup
+## This project is solely made by me to learn about Vuejs and Go programming languages
 
-### 🎯 Goals
-1. Create a simple **Signup / Login** page.
-2. After login, redirect to a **Home Page** displaying:
-   - Welcome message  
-   - User Name  
-   - User Email  
-3. Provide a **Logout** option.
+### About
+This project is made using:
+
+Frontend: Vuejs, TailwindCSS, axios.
+
+Backend: Go, Postman (for testing).
+
+Database: MongoDB.
+
+APIs: REST-API, PokeAPI.
 
 ### 🛠️ Process
-1. Build **Login / Signup / Logout APIs** using **Go** and **Gorilla Mux**.
-2. Develop the frontend using **Vue.js**.
+1. Build **Login / Signup / Logout APIs** using **Go lang**.
+2. Develop the frontend using **Vue.js** and **TailwindCSS**.
 3. Use **MongoDB** to store user data.
-4. Connect frontend and backend.
+4. Connect frontend and backend using axios.
 5. Push the entire project to a **GitHub repository**.
-6. **Deploy** the finished phase.
+6. Integrate **PokeAPI** to the project to allow for user to select their favorite pokemons to their dex.
+7. Added functionality to view MyDex.
+8. Added two game modes: Pokemon Card Guessing Game and Who's that pokemon game.
+9. Push finished project to the Github.
 
 ---
 
-## ✅ PHASE 2: Pokémon Integration & User Dex
-
-### 🎯 Goals
-1. Integrate the **PokeAPI** into the website.
-2. Add a **Search Bar** to look up any Pokémon and display its full data.
-3. Allow users to **register Pokémon to their profile**.
-4. Display registered their favorite Pokémon in a **MyDex section** on the Home Page for each user.
-5. User will be able to scroll through their MyDex mons.
-
-### 🛠️ Process
-1. Integrate the **PokeAPI** into the frontend.
-2. Learn how to:
-   - Fetch JSON data from the API  
-   - Display the data properly on the frontend
-3. Expand the **User Profile System** with new objects such as:
-   - **MyDex**
-   - Optional: **Search History** (last 5 searched Pokémon)
-4. In the MyDex, display only:
-   - Pokémon Image  
-   - Pokémon Name  
-   - Pokémon Type  
-
----
-
-## ✅ PHASE 3: Mini Games & Final Deployment
-
-### 🎯 Goals
-1. Add a **Pokémon Guesser Mini-Game** (anime-style).
-2. Add a **Card Matching Game**.
-3. **Deploy** the complete website.
+### Images
+<img width="1920" height="855" alt="image" src="https://github.com/user-attachments/assets/f441d9ee-091c-4caf-ad95-4c564b2cc830" />
+<img width="1920" height="848" alt="image" src="https://github.com/user-attachments/assets/56b131a5-7a84-4fc8-9764-ce733843270a" />
+<img width="1899" height="812" alt="image" src="https://github.com/user-attachments/assets/96a5a248-91e4-41dc-a274-35ebb0861862" />
+<img width="1920" height="829" alt="image" src="https://github.com/user-attachments/assets/0be7dbbb-f23b-4c5a-ba0e-46ebfc287bc2" />
+<img width="1920" height="857" alt="image" src="https://github.com/user-attachments/assets/7a311f64-106b-4e5c-8f1c-6e6164ea9659" />
+<img width="1920" height="820" alt="image" src="https://github.com/user-attachments/assets/5d86d427-2a3f-4b4d-b120-e91aa0a88622" />
